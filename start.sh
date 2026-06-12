@@ -2,8 +2,8 @@
 
 ollama serve &
 
-sleep 10
+sleep 15
 
-ollama pull qwen2.5:1.5b
+ollama pull qwen2.5:1.5b || true
 
-wait
+tail -f /dev/null
